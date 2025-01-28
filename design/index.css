@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+}
+BODY{
+    background-color: aliceblue;
+    color: rgb(0, 0, 0);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 3vw;
+    border-bottom: 1px solid black;
+
+}
+.nav-menu{
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+    
+}
+.nav-menu button{
+    background-color: #92e3a9;
+    padding: 0.7vw 2vw;
+    border: none;
+    border-radius: 4px;
+
+    
+}
+.nav-menu h4{
+    font-weight: 600;
+}
+.navbar span{
+    color:  #92e3a9;
+}
+.main-content{/*so by this we are deciding how much our main content should occupy*/
+   
+    height: 89vh;
+    /* background-color: rgb(68, 74, 68); */
+    display: flex;
+}
+.main-content .left{
+    /* border: 4px solid rgb(219, 32, 32); */
+    height:100%;
+    width: 50%;
+    padding: 5vw 3vw;
+}
+.main-content .right{
+    /* border: 4px solid rgb(65, 154, 89); */
+    height:100%;
+    width: 50%;
+}
+.Attention{
+    color:  #92e3a9;
+}
+.main-content .left h1{
+    margin-bottom: 3vh;
+    line-height: 7vh;
+}
+.main-content .left h4{
+    color: #666;
+    line-height: 4.5vh;
+    margin-bottom: 8vh;
+}
+.main-content .left button{
+    font-size: 1.2vw;
+    padding: 1vw 2vw;
+    background-color: #92e3a9;
+    color: #000;
+    border: none;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+}
+nav h1{
+    cursor: pointer;
+}
+i{
+    font-size: 2vw;
+    display: none;
+    font-weight: 800;
+}
+
+
+/* responsiveness */
+@media (max-width:600px) {
+    
+    nav h1{
+        font-size: 3.5vw;
+    }
+     .nav-menu i{
+        display:block;
+     }
+     .nav-menu h4{
+        display: none;
+     }
+     .main-content{
+        flex-direction: column;
+     }
+     .main-content .left{
+        height: 100%;
+        width: 100%;
+
+     }
+     .main-content .right{
+        height: 100%;
+        width: 100%;
+     }
+     .main-content .left button{
+        font-size: 3.2vw;
+        padding: 2vw 3vw;
+        background-color: #92e3a9;
+        color: #000;
+        border: none;
+        border-radius: 4px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+    
+}
